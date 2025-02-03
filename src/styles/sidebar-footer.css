@@ -1,5 +1,5 @@
 body{
-    background-color: #000;
+    background-image: linear-gradient(to right, rgb(255, 192, 203), rgb(0, 0, 255), rgb(255, 192, 203));
     font-family: var(--font-dm-sans);
 }
 
@@ -46,7 +46,7 @@ body{
 }
 
 .library{
-    background-color:#121212;
+    background-color:#121212bd;
     border-radius:8px;
     display:flex;
     justify-content: space-between;
@@ -166,40 +166,36 @@ body{
     border-radius:20px;
 }
 
-.disclainer-premium {
+.disclaimer-premium {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right, rgb(255, 192, 203), rgb(0, 0, 255), rgb(255, 192, 203));
-    padding: 20px 40px;
+    background-color: #121212bd;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
 }
-
-.disclainer-premium .text {
-    flex-shrink: 0;
+.disclaimer-premium .text {
+   flex-shrink: 0;
 }
-
-.disclainer-premium .disclainer-premium__title {
-    color: #FFF;
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 12px;
     margin-bottom: 10px;
 }
 
-.disclainer-premium .disclainer-premium_subtitle {
-    color: #FFF;
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
     font-size: 14px;
     font-weight: 500;
 }
 
-.disclainer-premium button {
-    position: fixed;
-    right:50px;
-    background-color: #FFF;
-    color: #000;
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
     font-size: 16px;
     font-weight: bold;
     padding: 14px 30px;
@@ -207,11 +203,4 @@ body{
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
-}
-
-.disclainer-premium button:hover {
-    background: linear-gradient(to right, rgb(255, 192, 203), rgb(0, 0, 255), rgb(255, 192, 203));
-    color: #FFF;
-    border: 1px solid #000;
-    box-shadow: 2px 2px 10px black;
 }
